@@ -1,0 +1,105 @@
+Natalia Mora Luquez - IV Cohorte - GracoSoft
+Ejercicios Propuestos Guia Unidad 2:
+-------------------------------------------------------------------
+Antes de comenzar los ejercicios:
+
+Escritorio donde se est� trabajando: 
+Desktop/NataliaML_LinuxGit/libro/
+
+libro/ ---->repositorio
+-------------------------------------------------------------------
+1):
+
+mkdir libro/
+cd libro/
+git init
+ls - a
+
+2):
+
+git status
+ a):
+  touch indice.txt
+  vim indice.txt
+     comando i para ingresar el texto
+
+     (texto ingresado a continuaci�n)
+       i. Cap�tulo 1: Introducci�n a Git
+       ii. Cap�tulo 2: Flujo de trabajo b�sico
+       iii. Cap�tulo 3: Repositorios remotos
+
+     comando :wq luego de ingresar el texto para salir y guardar
+ b):
+ git status (luego de haber guardado y editado el indice.txt, ahora este archivo est� en "Untracked files")
+ c):
+  git add indice.txt
+ d): 
+  git status (el status cambi� y el indice.txt est� ahora en "Changes to be committed", es
+decir, ahora est�  en el �rea de preparaci�n para luego confirmarlo)
+
+3):
+
+git commit -m "A�adido indice del libro" indice.txt
+git status (para ver el status del repositorio y confirmar que el archivo indice.txt en este caso ya fue confirmado)
+
+4):
+
+vim indice.txt 
+     comando i para ingresar el texto
+
+     (texto ingresado a continuaci�n)
+       i. Cap�tulo 1: Introducci�n a Git
+       ii. Cap�tulo 2: Flujo de trabajo b�sico
+       iii. Capitulo 3: Gesti�n de ramas 
+       iv. Cap�tulo 4: Repositorios remotos
+
+     comando :wq luego de ingresar el texto para salir y guardar
+ b):
+git diff (para evidenciar los cambios recientemente realizados al fichero indice.txt)
+(luego)
+git add indice.txt
+
+ c): 
+git commit -m "A�adido cap�tulo 3 sobre gesti�n de ramas"
+git status (para verificar q el ult. cambio realizado fue confirmado)
+
+6):
+
+git log -p (inclu�os -p al comando git logpara tener un historial m�s detallado de los cambios realizados)
+
+mkdir capitulos/
+cd capitulos/
+touch capitulo1.txt 
+vim capitulo1.txt 
+i
+
+ Git es un sistema de control de versiones ideado por Linus Torvalds.
+A�adir los cambios a la zona de intercambio temporal.
+Hacer un commit de los cambios con el mensaje �A�adido cap�tulo 1.�
+Volver a mostrar el historial de cambios del repositorio
+:wq
+7):
+
+
+
+8):
+
+9):
+
+10):
+
+11):
+
+12):
+
+13):
+
+14):
+
+15):
+
+16):
+
+17):
+
+18):
